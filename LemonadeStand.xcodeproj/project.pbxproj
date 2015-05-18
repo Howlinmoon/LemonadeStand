@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961BDC131B0A45840050A344 /* Supplies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961BDC121B0A45840050A344 /* Supplies.swift */; };
 		9667636D1B065BDD00172A45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667636C1B065BDD00172A45 /* AppDelegate.swift */; };
 		9667636F1B065BDD00172A45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9667636E1B065BDD00172A45 /* ViewController.swift */; };
 		966763721B065BDD00172A45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 966763701B065BDD00172A45 /* Main.storyboard */; };
@@ -26,6 +27,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		961BDC121B0A45840050A344 /* Supplies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Supplies.swift; sourceTree = "<group>"; };
 		966763671B065BDD00172A45 /* LemonadeStand.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LemonadeStand.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9667636B1B065BDD00172A45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9667636C1B065BDD00172A45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -79,6 +81,7 @@
 			children = (
 				9667636C1B065BDD00172A45 /* AppDelegate.swift */,
 				9667636E1B065BDD00172A45 /* ViewController.swift */,
+				961BDC121B0A45840050A344 /* Supplies.swift */,
 				966763701B065BDD00172A45 /* Main.storyboard */,
 				966763731B065BDD00172A45 /* Images.xcassets */,
 				966763751B065BDD00172A45 /* LaunchScreen.xib */,
@@ -213,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9667636F1B065BDD00172A45 /* ViewController.swift in Sources */,
+				961BDC131B0A45840050A344 /* Supplies.swift in Sources */,
 				9667636D1B065BDD00172A45 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -409,6 +413,7 @@
 				966763881B065BDD00172A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		966763891B065BDD00172A45 /* Build configuration list for PBXNativeTarget "LemonadeStandTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +422,7 @@
 				9667638B1B065BDD00172A45 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
