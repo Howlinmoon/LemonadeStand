@@ -79,7 +79,14 @@ class ViewController: UIViewController {
         
         lemonMixCount.text = "\(lemonsToMix)"
         iceCubeMixCount.text = "\(iceCubesToMix)"
+    }
+    
+    func showAlertWithText( header: String = "Warning", message: String) {
+        var alert = UIAlertController(title: header, message: message, preferredStyle: UIAlertControllerStyle.Alert)
         
+        alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
+        
+        self.presentViewController(alert, animated: true, completion: nil)
         
     }
     
