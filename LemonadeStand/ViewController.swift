@@ -19,6 +19,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var lemonMixCount: UILabel!
     @IBOutlet weak var iceCubeMixCount: UILabel!
     
+    // initially $10, 1 lemon, 1 ice cube (adjustable)
+    var supplies = Supplies(aMoney: 10, aLemons: 1, aIceCubes: 1)
+    // setup our pricing - non-adjustable
+    let price = Price()
     
     override func viewDidLoad() {
         super.viewDidLoad()
