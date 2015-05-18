@@ -24,6 +24,11 @@ class ViewController: UIViewController {
     // setup our pricing - non-adjustable
     let price = Price()
     
+    var lemonsToPurchase = 0
+    var iceCubesToPurchase = 0
+    var lemonsToMix = 0
+    var iceCubesToMix = 0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
