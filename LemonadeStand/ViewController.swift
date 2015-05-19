@@ -67,6 +67,40 @@ class ViewController: UIViewController {
 
     
     @IBAction func startDayButtonPressed(sender: UIButton) {
+        
+        let customers = Int(arc4random_uniform(UInt32(11)))
+        println("Generated \(customers) random customers")
+        
+        if lemonsToMix == 0 || iceCubesToMix == 0 {
+            // invalid mix
+            showAlertWithText(message: "You need to add at least 1 Lemon and 1 Ice Cube")
+        } else {
+            // valid mix
+            let lemonadeRatio = Double(lemonsToMix) / Double(iceCubesToMix)
+            
+            for x in 0...customers {
+                println("Working on customer number \(x)")
+                let preference = Double(arc4random_uniform(UInt32(101)))/100
+                println("Customer preference: \(preference)")
+                println("Lemonade Ratio: \(lemonadeRatio)")
+                
+                if preference < 0.4 && lemonadeRatio > 1 {
+                    supplies.money += 1
+                    println("Paid #1")
+                } else if preference >= 0.4 && preference <= 0.6 && lemonadeRatio == 1 {
+                    supplies.money += 1
+                    println("Paid #2")
+                } else if preference > 0.6 && lemonadeRatio < 1 {
+                    supplies.money += 1
+                    println("Paid #3")
+                } else {
+                    println("Did not get paid")
+                }
+                
+            }
+            
+        }
+        
     }
     
     // Helper functions
