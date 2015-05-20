@@ -36,6 +36,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        simulateWeatherToday()
         updateMainView()
     }
 
@@ -175,6 +176,7 @@ class ViewController: UIViewController {
             lemonsToMix = 0
             iceCubesToMix = 0
             
+            simulateWeatherToday()
             updateMainView()
             
         }
@@ -200,6 +202,12 @@ class ViewController: UIViewController {
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Default, handler: nil))
         
         self.presentViewController(alert, animated: true, completion: nil)
+        
+    }
+    
+    func simulateWeatherToday () {
+        let index = Int(arc4random_uniform(UInt32(weatherArray.count)))
+        weatherToday = weatherArray[index]
         
     }
     
