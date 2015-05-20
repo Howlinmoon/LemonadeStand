@@ -166,6 +166,13 @@ class ViewController: UIViewController {
                 
             }
             
+            lemonsToPurchase = 0
+            iceCubesToPurchase = 0
+            lemonsToMix = 0
+            iceCubesToMix = 0
+            
+            updateMainView()
+            
         }
         
     }
