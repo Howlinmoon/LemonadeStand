@@ -32,10 +32,14 @@ class ViewController: UIViewController {
     var weatherArray:[[Int]] = [[-10, -9, -5, -7], [5, 8, 10, 9], [22, 25, 27, 23]]
     var weatherToday:[Int] = [0, 0, 0, 0]
     
+    // weather image view?
+    var weatherImageView: UIImageView = UIImageView(frame: CGRect(x: 20, y: 50, width: 50, height: 50))
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        // add our weather subview on top of our current view
+        self.view.addSubview(weatherImageView)
         simulateWeatherToday()
         updateMainView()
     }
