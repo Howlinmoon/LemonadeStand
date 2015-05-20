@@ -33,7 +33,7 @@ class ViewController: UIViewController {
     var weatherToday:[Int] = [0, 0, 0, 0]
     
     // weather image view?
-    var weatherImageView: UIImageView = UIImageView(frame: CGRect(x: 20, y: 50, width: 50, height: 50))
+    var weatherImageView: UIImageView = UIImageView(frame: CGRect(x: 20, y: 52, width: 50, height: 50))
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -212,6 +212,17 @@ class ViewController: UIViewController {
     func simulateWeatherToday () {
         let index = Int(arc4random_uniform(UInt32(weatherArray.count)))
         weatherToday = weatherArray[index]
+        
+        switch index {
+        case 0: weatherImageView.image = UIImage(named:
+            "Cold")
+        case 1: weatherImageView.image = UIImage(named:
+            "Mild")
+        case 2: weatherImageView.image = UIImage(named:
+            "Warm")
+        default: weatherImageView.image = UIImage(named:
+            "Warm")
+        }
         
     }
     
